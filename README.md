@@ -1,7 +1,7 @@
 # docker pull jbiancot/ubuntu_lamp
 A Docker image with Ubuntu, Apache and PHP: jbiancot/ubuntu_lamp
 
-A more complete Docker image containing:
+A more complete and standard Docker image containing:
 
 * Ubuntu 16.04.3 LTS (xenial)
 * Apache/2.4.18
