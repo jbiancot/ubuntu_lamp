@@ -13,7 +13,7 @@ Then I have decided to tailor-made my own trying to follow as much the Ubuntu's 
 
 Here the list of packages I have used on some LAMP projects and what I have started with:
 
-## Apache modules
+# Apache modules
 ```
  core_module (static)
  so_module (static)
@@ -48,7 +48,7 @@ Here the list of packages I have used on some LAMP projects and what I have star
  unique_id_module (shared)
 ```
 
-## PHP modules
+# PHP modules
 ```
 PHP Modules
 calendar
@@ -102,19 +102,21 @@ zlib
 Zend OPcache
 ```
 
-## Usage
+# Usage
 
-If you are not running Apache Web Server on the host, otherwise you would need to change the port.
+If you are not running Apache Web Server on the host, **otherwise you would need to change the port.**
 ```
 docker run -p 80:80 -ti jbiancot/ubuntu_lamp /bin/bash
 ```
-Once you are in, you will start Apache webserver manually: apachectl start
+Once you are in, you will start Apache webserver manually: **apachectl start**
 
 Like in a standard Ubuntu LAMP installation, I am using:
 
-/var/www/html as the document root.
+`/var/www/html`
 
-## Root user and credentials
+as the document root.
+
+# Root user and credentials
 
 If you are SSH into the box, please refer to the Dockerfile for root's password.
 
