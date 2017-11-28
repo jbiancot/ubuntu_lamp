@@ -9,7 +9,7 @@ A more complete and standard Docker image containing:
 
 I have tried some Docker LAMP images but they fall short, in many cases they have just basic Apache/PHP packages and it is hard to extend, or they do not follow conventions, e.g: path for web files (.html, .php, .js) are different from the standard, etc.
 
-Then I have decided to tailor-made my own trying to follow as much the Ubuntu's LAMP stack.
+Then I have decided to tailor-made my own image trying to follow as much the Ubuntu's LAMP stack, this image uses as Docker parent image (ubuntu:16.04).
 
 # Usage
 
