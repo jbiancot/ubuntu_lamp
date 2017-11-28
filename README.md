@@ -1,10 +1,12 @@
-# A Docker image with Ubuntu, Apache and PHP: jbiancot/ubuntu_lamp
+# A Docker image with Ubuntu, Apache and PHP
 
 A more complete and standard Docker image containing:
 
 * Ubuntu 16.04.3 LTS (xenial)
 * Apache/2.4.18
 * PHP 7.0.22
+
+_docker image name: jbiancot/ubuntu_lamp_
 
 I have tried some Docker LAMP images but they fall short. In many cases, they have basic Apache/PHP packages and it is hard to extend from them, or they do not follow conventions, e.g: path for web files (.html, .php, .js) is different from the standard, etc.
 
