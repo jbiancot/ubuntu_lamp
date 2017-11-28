@@ -7,13 +7,13 @@ A more complete Docker image containing:
 * Apache/2.4.18
 * PHP 7.0.22
 
-I have tried a some Docker LAMP images but they fall short, in many cases they have just basic Apache/PHP packages and it is hard to extend or they do not follow a convention, e.g: path are different, etc.
-Then I have decided to tailor-made my own.
+I have tried some Docker LAMP images but they fall short, in many cases they have just basic Apache/PHP packages and it is hard to extend, or they do not follow conventions, e.g: path are different, etc.
+Then I have decided to tailor-made my own trying to follow as much the Ubuntu's LAMP stack.
 
 Here the list of packages I have used on some LAMP projects and what I have started with:
 
+## Apache modules
 ```
-Apache Loaded Modules:
  core_module (static)
  so_module (static)
  watchdog_module (static)
@@ -47,9 +47,9 @@ Apache Loaded Modules:
  unique_id_module (shared)
 ```
 
-For PHP
+## PHP modules
 ```
-[PHP Modules]
+PHP Modules
 calendar
 Core
 ctype
