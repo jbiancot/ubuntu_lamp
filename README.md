@@ -13,7 +13,7 @@ Then I have decided to tailor-made my own image trying to follow as much the Ubu
 
 # Usage
 
-If you are not running Apache Web Server on the host, **otherwise you would need to change the port.**
+If you are not running Apache Web Server on the host you can use port 80 **otherwise you would need to change the port.**
 
 `docker run -p 80:80 -ti jbiancot/ubuntu_lamp /bin/bash`
 
@@ -23,13 +23,14 @@ Like in a standard Ubuntu LAMP installation, I am using:
 
 `/var/www/html`
 
-as the document root.
+as the document root for web content.
 
 # Root user and credentials
 
 Open SSH is present, if you want to SSH into the box, please refer to the Dockerfile for root's password (credentails).
 
 You could start SSH service (sshd) in case you want to have access the Docker container from a remote box:
+
 `service ssh start`
 
 # HTTPS
@@ -38,11 +39,13 @@ When you start Apache webserver, Ports 80 (HTTP) and 443 (HTTPS) will be open/li
 
 # PHP ini
 
-I didn't modify the php.ini, it is up to you to make the appropriate enhancements.
+I didn't modify the php.ini, it is up to you to make the appropriate enhancements, change request time out, memory requirement, date time, etc.
 
-# Original files, still available as backup.
+# What files have been modified ?
 
-I have changed a few files with my custom setup but I have left the original files, at the moment: apache2.conf and 000-default.conf were modified, but on the same directory where they reside you can find the unaltered version of the files.
+I have changed a few files with my custom setup but they were tiny modifications, please refer to the Dockerfile to the the logic
+
+At the moment: only apache2.conf and 000-default.conf were modified with a couple of extra lines but I kept the unaltered version of the files on the same directory where the files reside with suffix *backup.conf*
 
 Here the list of packages I have used on some LAMP projects and what I have started with:
 
