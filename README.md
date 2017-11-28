@@ -37,7 +37,7 @@ You could start SSH service (sshd) in case you want to have access the Docker co
 
 When you start Apache webserver, Ports 80 (HTTP) and 443 (HTTPS) will be open/listening. You will need to setup SSL certificates, etc. In order to be able to use HTTPs.
 
-# The php.ini
+# The php.ini file(s)
 
 I didn't modify the php.ini, it is up to you to make the appropriate enhancements, change request time out, memory requirement, date time, etc.
 
