@@ -7,7 +7,7 @@ A more complete and standard Docker image containing:
 * Apache/2.4.18
 * PHP 7.0.22
 
-I have tried some Docker LAMP images but they fall short, in many cases they have just basic Apache/PHP packages and it is hard to extend, or they do not follow conventions, e.g: path for web files (.html, .php, .js) are different from the standard, etc.
+I have tried some Docker LAMP images but they fall short. In many cases, they have basic Apache/PHP packages and it is hard to extend from them, or they do not follow conventions, e.g: path for web files (.html, .php, .js) is different from the standard, etc.
 
 Then I have decided to tailor-made my own image trying to follow as much the Ubuntu's LAMP stack, this image uses the parent image (ubuntu:16.04)
 
@@ -37,7 +37,7 @@ You could start SSH service (sshd) in case you want to have access the Docker co
 
 When you start Apache webserver, Ports 80 (HTTP) and 443 (HTTPS) will be open/listening. You will need to setup SSL certificates, etc. In order to be able to use HTTPs.
 
-# PHP ini
+# The php.ini
 
 I didn't modify the php.ini, it is up to you to make the appropriate enhancements, change request time out, memory requirement, date time, etc.
 
