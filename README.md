@@ -47,8 +47,6 @@ I have changed a few files with my custom setup but they were tiny modifications
 
 At the moment, only apache2.conf and 000-default.conf were modified more substantially with a couple of extra lines but I kept the unaltered version of those files on the same directory, just look for the file name and suffix *...backup.conf*
 
-# Here the list of packages I have used on some LAMP projects and what I have started with:#
-
 # Apache modules
 ```
  core_module (static)
