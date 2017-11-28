@@ -1,5 +1,4 @@
-# docker pull jbiancot/ubuntu_lamp
-A Docker image with Ubuntu, Apache and PHP: jbiancot/ubuntu_lamp
+# A Docker image with Ubuntu, Apache and PHP: jbiancot/ubuntu_lamp
 
 A more complete and standard Docker image containing:
 
