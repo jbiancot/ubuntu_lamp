@@ -1,5 +1,5 @@
-# ubuntu_lamp
-Docker image with Ubuntu, Apache and PHP: jbiancot/ubuntu_lamp
+# docker pull jbiancot/ubuntu_lamp
+A Docker image with Ubuntu, Apache and PHP: jbiancot/ubuntu_lamp
 
 A more complete Docker image containing:
 
@@ -8,6 +8,7 @@ A more complete Docker image containing:
 * PHP 7.0.22
 
 I have tried some Docker LAMP images but they fall short, in many cases they have just basic Apache/PHP packages and it is hard to extend, or they do not follow conventions, e.g: path are different, etc.
+
 Then I have decided to tailor-made my own trying to follow as much the Ubuntu's LAMP stack.
 
 Here the list of packages I have used on some LAMP projects and what I have started with:
@@ -100,3 +101,11 @@ zlib
 [Zend Modules]
 Zend OPcache
 ```
+
+## Usage
+
+If you are not running Apache Web Server
+```
+docker run -p 80:80 -ti jbiancot/ubuntu_lamp /bin/bash
+```
+You will need to start Apache webserver manually: apachectl start
