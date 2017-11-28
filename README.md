@@ -43,7 +43,7 @@ I didn't modify the php.ini, it is up to you to make the appropriate enhancement
 
 # What files have been modified ?
 
-I have changed a few files with my custom setup but they were tiny modifications, please refer to the Dockerfile to the the logic.
+I have changed a few files with some custom setup but they were tiny modifications, please refer to the Dockerfile to review the the logic I followed.
 
 At the moment, only apache2.conf and 000-default.conf were modified more substantially with a couple of extra lines but I kept the unaltered version of those files on the same directory, just look for the file name and suffix *...backup.conf*
 
