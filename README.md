@@ -104,8 +104,18 @@ Zend OPcache
 
 ## Usage
 
-If you are not running Apache Web Server
+If you are not running Apache Web Server on the host, otherwise you would need to change the port.
 ```
 docker run -p 80:80 -ti jbiancot/ubuntu_lamp /bin/bash
 ```
-You will need to start Apache webserver manually: apachectl start
+Once you are in, you will start Apache webserver manually: apachectl start
+
+Like in a standard Ubuntu LAMP installation, I am using:
+
+/var/www/html as the document root.
+
+## Root user and credentials
+
+If you are SSH into the box, please refer to the Dockerfile for root's password.
+
+You could start SSH service (sshd) in case you want to have access the Docker container from a remote box:  service ssh start
