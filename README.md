@@ -11,6 +11,39 @@ I have tried some Docker LAMP images but they fall short, in many cases they hav
 
 Then I have decided to tailor-made my own trying to follow as much the Ubuntu's LAMP stack.
 
+# Usage
+
+If you are not running Apache Web Server on the host, **otherwise you would need to change the port.**
+
+`docker run -p 80:80 -ti jbiancot/ubuntu_lamp /bin/bash`
+
+Once you are in, you will start Apache webserver manually: **apachectl start**
+
+Like in a standard Ubuntu LAMP installation, I am using:
+
+`/var/www/html`
+
+as the document root.
+
+# Root user and credentials
+
+Open SSH is present, if you want to SSH into the box, please refer to the Dockerfile for root's password (credentails).
+
+You could start SSH service (sshd) in case you want to have access the Docker container from a remote box:
+`service ssh start`
+
+# HTTPS
+
+When you start Apache webserver, Ports 80 (HTTP) and 443 (HTTPS) will be open/listening. You will need to setup SSL certificates, etc. In order to be able to use HTTPs.
+
+# PHP ini
+
+I didn't modify the php.ini, it is up to you to make the appropriate enhancements.
+
+# Original files, still available as backup.
+
+I have changed a few files with my custom setup but I have left the original files, at the moment: apache2.conf and 000-default.conf were modified, but on the same directory where they reside you can find the unaltered version of the files.
+
 Here the list of packages I have used on some LAMP projects and what I have started with:
 
 # Apache modules
@@ -101,29 +134,3 @@ zlib
 [Zend Modules]
 Zend OPcache
 ```
-
-# Usage
-
-If you are not running Apache Web Server on the host, **otherwise you would need to change the port.**
-
-`docker run -p 80:80 -ti jbiancot/ubuntu_lamp /bin/bash`
-
-Once you are in, you will start Apache webserver manually: **apachectl start**
-
-Like in a standard Ubuntu LAMP installation, I am using:
-
-`/var/www/html`
-
-as the document root.
-
-# Root user and credentials
-
-Open SSH is present, if you want to SSH into the box, please refer to the Dockerfile for root's password (credentails).
-
-You could start SSH service (sshd) in case you want to have access the Docker container from a remote box:
-`service ssh start`
-
-# HTTPS
-
-When you start Apache webserver, Ports 80 (HTTP) and 443 (HTTPS) will be open/listening. You will need to setup SSL certificates, etc. In order to be able to use HTTPs.
-
