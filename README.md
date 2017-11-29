@@ -28,7 +28,7 @@ as the document root for web content.
 
 # Root user and credentials
 
-Open SSH is present, if you want to SSH into the box, please refer to the Dockerfile for root's password (credentails).
+Open SSH is present, if you want to SSH into the box, please refer to the Dockerfile for root's password (credentials).
 
 You could start SSH service (sshd) in case you want to have access the Docker container from a remote box:
 
@@ -36,7 +36,7 @@ You could start SSH service (sshd) in case you want to have access the Docker co
 
 # HTTPS
 
-When you start Apache webserver, Ports 80 (HTTP) and 443 (HTTPS) will be open/listening. You will need to setup SSL certificates, etc. In order to be able to use HTTPs.
+When you start Apache webserver, Ports 80 (HTTP) and 443 (HTTPS) will be open/listening. You will need to setup SSL certificates, etc. In order to be able to use HTTPS.
 
 # About the php.ini file
 
