@@ -8,6 +8,8 @@ A more complete and standard Docker image containing:
 
 _docker image name: jbiancot/ubuntu_lamp_
 
+# I strongly recommend to you a newer version of this images: https://github.com/jbiancot/ubuntu_lamp_java
+
 I have tried some Docker LAMP images but they fall short. In many cases, they have basic Apache/PHP packages and it is hard to extend from them, or they do not follow conventions, e.g: path for web files (.html, .php, .js) is different from the standard, etc.
 
 Then I have decided to tailor-made my own image trying to follow as much the Ubuntu's LAMP stack, this image uses the parent image (ubuntu:16.04)
